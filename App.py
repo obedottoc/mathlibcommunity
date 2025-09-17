@@ -1,8 +1,7 @@
 # app.py
 
-from Conversions import Length, Time
-from NumberSystem import NumberSystem
-# Other modules for later use
+from Conversions import Length, Time, NumberSystem
+# Other modules can be added later:
 # from Area import Area
 # from Volume import Volume
 # from Interest import Interest
@@ -17,9 +16,9 @@ def main():
         print("1. Length Conversions")
         print("2. Time Conversions")
         print("3. Number System Conversions")
-        print("4. Area Conversions (Coming Soon)")
-        print("5. Volume Conversions (Coming Soon)")
-        print("6. Interest Calculations (Coming Soon)")
+        print("4. Area (Coming Soon)")
+        print("5. Volume (Coming Soon)")
+        print("6. Interest (Coming Soon)")
         print("7. Trigonometry (Coming Soon)")
         print("8. Statistics (Coming Soon)")
         print("9. Vector Operations (Coming Soon)")
@@ -80,6 +79,7 @@ def main():
             print("\nNumber System Conversions:")
             print("a. Decimal to Binary")
             print("b. Binary to Decimal")
+            print("c. Binary to Hexadecimal")
             sub_choice = input("Select an option: ")
 
             if sub_choice == "a":
@@ -88,6 +88,9 @@ def main():
             elif sub_choice == "b":
                 binary_str = input("Enter binary number: ")
                 print("Decimal:", NumberSystem.binary_to_decimal(binary_str))
+            elif sub_choice == "c":
+                binary_str = input("Enter binary number: ")
+                print("Hexadecimal:", NumberSystem.binary_to_hex(binary_str))
             else:
                 print("Invalid option.")
 
