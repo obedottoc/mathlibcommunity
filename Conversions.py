@@ -50,3 +50,8 @@ class NumberSystem:
     def binary_to_decimal(binary_str: str) -> int:
         """Convert Binary to Decimal."""
         return int(binary_str, 2)
+
+    @staticmethod
+    def binary_to_hex(binary_str: str) -> str:
+        """Convert Binary to Hexadecimal."""
+        return hex(int(binary_str, 2)).replace("0x", "").upper()
